@@ -88,7 +88,7 @@ ul{
 	min-height: 4em;
 }
 
-/* about page */
+/* about page - not currently in use 
 
 .intro-wrapper{
 	background-color: var(--mainColour);
@@ -103,7 +103,7 @@ ul{
 	margin-left: 50px;
 	margin-right: 200px;
 	width: 85%;
-}
+}  */
 
 /* contact page */
 
@@ -151,7 +151,7 @@ ul{
 	line-height: 15px;
 	flex-grow: 1;
 	min-width: 200px;
-	margin: 15px;
+	margin: 25px;
 	margin-bottom: 30px;
 }
 
@@ -168,11 +168,7 @@ ul{
 	align-items: center;
 	padding-left: 200px;
 	padding-right: 20px;
-/*	min-height: auto;
-	grid-template-columns: 1fr 1fr;
-	grid-column-gap: 1px;
-	grid-template-rows: 400px; */
-}
+} /* also used for about page */
 
 .project-text{
 	display: block;
@@ -180,7 +176,7 @@ ul{
 	margin-bottom: auto;
 	margin-left: 40px;
 	width: 80%;
-}
+} /* also used for about page */
 
 .project-heading-wrapper{
 	display: grid;
