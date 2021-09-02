@@ -24,7 +24,7 @@ h1, h3, h4, h5, h6, strong{
 
 h1 { font-size: 50px;}
 h2 { font-size: 36px; text-align: center; }
-h3 { font-size: 32px;}
+h3 { font-size: 32px; line-height: normal;}
 h4 { font-size: 23px; font-weight: 400; margin-right: 20px;}
 h5 { font-size: 24px; font-weight: 400; text-align: center; margin: 0 auto; padding: auto auto;}
 h6 { font-size: 18px; font-weight: 300; text-align: center; margin: 0 auto; padding: auto auto;}
@@ -50,10 +50,6 @@ ul{
 	background-color: var(--mainColour);
 }
 
-.s2{
-	background-color: var(--secondColour);
-}
-
 .main-container{
 	width: 1200px;
 	margin: 0 auto;
@@ -65,7 +61,21 @@ ul{
   background-color: var(--mainColour);
 }
 
-.footer {
+.heading-wrapper{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+text-align: center;
+}
+
+.center{
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 99%;
+}
+
+/*not in use yet: .footer {
   position: fixed;
   left: 0;
   bottom: 0;
@@ -73,121 +83,7 @@ ul{
   background-color: var(--barColour);
   color: white;
   text-align: center;
-}
-
-.title-wrapper{
-	display: grid;
-	justify-content: center;
-	align-content: center;
-	min-height: 8em;
-}
-
-.heading-wrapper{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding-left: 200px;
-	padding-right: 20px;
-}
-
-/* about page - not currently in use
-
-.intro-wrapper{
-	background-color: var(--mainColour);
-	display: grid;
-	padding-top: 10px;
-	grid-template-columns: 0.75fr 1.25fr;
-	grid-template-rows: 500px;
-}
-
-.aboutpar{
-	display: block;
-	margin-left: 50px;
-	margin-right: 200px;
-	width: 85%;
-}  */
-
-/* contact page */
-
-.contact-wrapper{
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 550px;
-}
-
-.contactform{
-	margin: 0 auto;
-	border-radius: 5px;
-	background-color: var(--secondColour);
-	padding: 20px;
-	width: 400px;
-}
-
-
-.socialmedia-wrapper{
-	display: grid;
-	width: 200px;
-	justify-content: center;
-	align-content: center;
-	grid-template-columns: 1fr 1fr 1fr;
-	min-height: 1em;
-	margin: 0 auto; /* <- center icons */
-}
-
-/* portfolio top pages */
-
-.portfolio-wrapper{
-	background-color: var(--mainColour);
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-	justify-content: center;
-
-	/* grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: 400px;
-	grid-row-gap: 20px;
-	grid-column-gap: 15px; */
-}
-
-.item-wrapper{
-	line-height: 15px;
-	flex-grow: 1;
-	min-width: 200px;
-	margin: 25px;
-	margin-bottom: 30px;
-}
-
-.stretch-wrapper{
-	display: grid;
-	min-height: 4em;
-}
-
-/* project pages */
-
-.project-wrapper{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding-left: 200px;
-	padding-right: 20px;
-} /* also used for about page */
-
-.project-text{
-	display: block;
-	margin-top: auto;
-	margin-bottom: auto;
-	margin-left: 40px;
-	width: 80%;
-} /* also used for about page */
-
-.project-heading-wrapper{
-	display: grid;
-	justify-content: center;
-	align-content: center;
-	grid-template-columns: 1fr 10fr 1fr;
-	line-height: 80%;
-	min-height: 4em;
-}
+} */
 
 /* navigation */
 
@@ -225,7 +121,186 @@ logo a:hover{
 	color: var(--btnHover);
 }
 
-/* navigation dropdown */
+/* index */
+
+.textpic{
+  position: relative;
+  text-align: center;
+	color: black;
+}
+
+.indextext{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -70%);
+	color: black;
+	line-height: 120px;
+}
+
+#indexpic{
+	width: 1104px;
+	height: 460px;
+}
+
+/* contact page */
+
+.socialmedia-wrapper{
+	display: grid;
+	width: 200px;
+	justify-content: center;
+	align-content: center;
+	grid-template-columns: 1fr 1fr 1fr;
+	min-height: 1em;
+	margin: 0 auto; /* <- center icons */
+}
+
+	#socials{
+		height:50px;
+		width: 50px;
+	}
+
+/* about page */
+
+.about-text{
+	display: block;
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-left: 40px;
+	width: 80%;
+}
+
+.about-wrapper{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-left: 200px;
+	padding-right: 20px;
+}
+
+#profilepic{
+	height:420px;
+	width:0.85784658691063*420px;
+}
+
+/* portfolio top page */
+
+.portfolio-wrapper{
+	background-color: var(--mainColour);
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+.item-wrapper{
+	line-height: 15px;
+	flex-grow: 1;
+	min-width: 200px;
+	margin: 25px;
+	margin-bottom: 30px;
+} /* also used for project pages */
+
+#portfoliopic{
+	height:300px;
+	width: 300px;
+	padding-bottom: 10px;
+}
+
+/* project pages */
+
+.project-wrapper{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-left: 150px;
+	padding-right: 150px;
+}
+
+.fullgallery-wrapper{
+	background-color: var(--mainColour);
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.project-text{
+	margin-top: auto;
+	margin-bottom: auto;
+	text-align: center;
+}
+
+.logline{
+	width: 500px;
+	margin: 0 auto;
+}
+
+.gallery-wrapper{
+	display: flex;
+	line-height: 15px;
+	min-width: 150px;
+	justify-content: center;
+	margin: 10px;
+	margin-bottom: 10px;
+}
+
+#projectpic{
+	height:300px;
+	width:300px;
+}
+
+	#arrows{
+		height:20px;
+		width:20px;
+	}
+
+#gallerypic{
+	height: 250px;
+	width:auto;
+}
+
+/* not sure if my @media is currently doing anything */
+
+@media (max-width: 1200px) {
+
+	body {
+			overflow-x: hidden;
+		}
+
+	.main-container{
+			width: 95%;
+		}
+
+		.nav-links li{
+			opacity: 100;
+		}
+
+}
+
+/* not in use anymore:
+
+.project-heading-wrapper{
+	display: grid;
+	justify-content: center;
+	align-content: center;
+	grid-template-columns: 1fr 10fr 1fr;
+	line-height: 80%;
+	min-height: 4em;
+}
+
+.justifycenter{
+display: block;
+margin-top: auto;
+margin-bottom: auto;
+width: 99%;
+}
+
+*/
+
+/* navigation dropdown - not in use right now
 
 .dropbutton {
   padding: 16px;
@@ -258,29 +333,10 @@ logo a:hover{
 
 .dropdown:hover .dropdown-content {display: block;}
 
-.dropdown:hover .dropbutton {color: var(--btnHover);}
+.dropdown:hover .dropbutton {color: var(--btnHover);} */
 
-@media (max-width: 1200px) {
 
-	body {
-			overflow-x: hidden;
-		}
-
-	.main-container{
-			width: 95%;
-		}
-
-		.rightalign{
-			width: 50%;
-		}
-
-		.nav-links li{
-			opacity: 100;
-		}
-
-}
-
-/* slides */
+/* slides - not currently in use
 
 
 .slider {
@@ -336,101 +392,9 @@ logo a:hover{
   position: relative;
 }
 
-	/* images */
-
-	.center{
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	width: 99%;
+#sliderpic{
+	width: 1000px;
+	height: auto;
 }
 
-	.limit-text{
-
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
-		width:80%;
-
-	}
-
-.justifycenter{
-display: block;
-margin-top: auto;
-margin-bottom: auto;
-width: 99%;
-}
-
-.rightalign{
-	display: block;
-	margin-left: 130px;
-	margin-top: 10px;
-	width: 98%;
-}
-
-.textpic{
-  position: relative;
-  text-align: center;
-	color: black;
-}
-
-
-.textonpic{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-	color: black;
-	text-shadow: -0.5px -0.5px 0 #5FADFC, +0.5px +0.5px 0 #5FADFC;
-}
-
-.indextext{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -70%);
-	color: black;
-	line-height: 120px;
-}
-
-	#profilepic{
-		height:420px;
-		width:0.85784658691063*420px;
-	}
-
-	#portfoliopic{
-		height:300px;
-		width: 300px;
-		padding-bottom: 10px;
-	}
-
-	#projectpic{
-		height:300px;
-		width:300px;
-
-	}
-
-	#longpic{
-		height: 200px;
-		width: 800px;
-	}
-
-	#sliderpic{
-		width: 1000px;
-		height: auto;
-	}
-
-	#indexpic{
-		width: 1104px;
-		height: 460px;
-	}
-
-	#arrows{
-		height:20px;
-		width:20px;
-	}
-
-	#socials{
-		height:50px;
-		width: 50px;
-	}
+*/
