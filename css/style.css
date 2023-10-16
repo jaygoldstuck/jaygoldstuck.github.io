@@ -262,6 +262,38 @@ logo a:hover{
 	width:auto;
 }
 
+
+/* slider attempt 3 */
+
+.carousel-container{
+	width: 66%;
+	height: 66%;
+	margin: auto;
+	overflow: hidden;
+}
+
+.carousel-slide{
+	display: flex;
+	width: 100%;
+	height: 500px;
+}
+
+
+#sliderpic{
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
 /* not sure if my @media is currently doing anything */
 
 @media (max-width: 1200px) {
